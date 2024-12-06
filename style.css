@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    /* line-height: 1.6;
+    padding: 20px; */
+}
+
+main {
+    /* max-width: 800px; */
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: tomato;
+    margin-left: 10px;
+}
+
+button.eliminar {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.editar {
+    background-color: #ffc107;
+    color: #333;
+}
+
+button:hover {
+    opacity: 0.9;
+    color: #007bff;
+    background-color: whitesmoke;
+    
+}
+footer {
+    background-color: grey;
+    color: whitesmoke;
+    text-align: center;
+
+}
+/* Estilos Generales para las Estadísticas */
+.prueba {
+    margin-top: 50px;
+    color: #333; /* Usamos un color oscuro para mejor visibilidad */
+    background-color: #f9f9f9; /* Fondo suave */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.prueba h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.prueba h3 {
+    font-size: 1.2em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.estadistica {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none; /* Quitar los puntos */
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1em;
+    background-color: #f0f8ff; /* Color de fondo suave */
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+ul li:hover {
+    background-color: #e0f7fa; /* Color de fondo al pasar el mouse */
+    cursor: pointer;
+}
+
+/* Estilos para los porcentajes */
+ul#porcentajeGenero li,
+ul#porcentajeDisciplina li {
+    font-weight: bold;
+}
+
+/* Espaciado y márgenes de las estadísticas */
+.estadistica h3 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.estadistica ul {
+    padding-left: 0;
+}
+
+#totalSocios {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007bff;
+}
