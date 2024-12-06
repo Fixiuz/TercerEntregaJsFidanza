@@ -161,5 +161,20 @@ document.getElementById("formAgregarSocio").addEventListener("submit", function 
 
 
 
+// 
+
+// Cambiar lentamente el color del fondo al mover el mouse
+document.body.addEventListener('mousemove', (event) => {
+    const red = Math.floor((event.clientX / window.innerWidth) * 255);
+    const green = Math.floor((event.clientY / window.innerHeight) * 255);
+    const blue = Math.floor(((event.clientX + event.clientY) / (window.innerWidth + window.innerHeight)) * 255);
+
+    // Aplicar el color como fondo del body para simular la transición de colores
+    document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+});
+
+
+
+
 renderizarSocios();
 actualizarEstadisticas();

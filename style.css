@@ -5,26 +5,34 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #166AAA;
     color: #333;
     /* line-height: 1.6;
     padding: 20px; */
+    cursor: default;
+    transition: background-color 0.5s ease; /* Transición suave para el color */
+
 }
+
+
+
 
 main {
     /* max-width: 800px; */
     margin: 0 auto;
-    background: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #13286d 0%, #13286d 10%, #155d9e 50%, #13286d 90%, #13286d 100%);
+
 }
 
 h1, h2 {
     text-align: center;
     margin-bottom: 50px;
     margin-top: 50px;
+    color: whitesmoke;
 }
 
 
@@ -33,37 +41,41 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    background-color: whitesmoke;
 }
 
 th, td {
     border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
+    color: rgb(65, 64, 64);
 }
 
 th {
     background-color: #007bff;
-    color: #fff;
+    color: whitesmoke;
 }
 
 button {
     padding: 5px 10px;
     font-size: 14px;
+    font-weight: bold;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    color: tomato;
+    color: #155d9e;
     margin-left: 10px;
+    
 }
 
 button.eliminar {
-    background-color: #dc3545;
-    color: #fff;
+    background-color: #b32d1f;
+    color: whitesmoke;
 }
 
 button.editar {
-    background-color: #ffc107;
-    color: #333;
+    background-color: #007bff;
+    color: whitesmoke;
 }
 
 button:hover {
@@ -73,31 +85,45 @@ button:hover {
     
 }
 footer {
+    display: flex;
     background-color: grey;
     color: whitesmoke;
-    text-align: center;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    color: #13286d;
+    font-weight: bold;
 
 }
 /* Estilos Generales para las Estadísticas */
 .prueba {
     margin-top: 50px;
     color: #333; /* Usamos un color oscuro para mejor visibilidad */
-    background-color: #f9f9f9; /* Fondo suave */
-    padding: 20px;
+    background: linear-gradient(to right, #13286d 0%, #13286d 10%, #155d9e 50%, #13286d 90%, #13286d 100%);    padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .prueba h2 {
     text-align: center;
-    color: #007bff;
+    color: whitesmoke;
     font-size: 1.8em;
     margin-bottom: 20px;
 }
 
+#totalSocios {
+    font-size: 2rem;  /* Tamaño de fuente grande */
+    font-weight: bold;  /* Hacer que el texto sea negrita */
+    color: #13286d !important;  
+    background-color: #ecf0f1;  /* Fondo suave */
+    padding: 0.3rem 0.8rem;  /* Espaciado interno alrededor del texto */
+    border-radius: 5px;  /* Bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Sombra suave */
+}
+
 .prueba h3 {
     font-size: 1.2em;
-    color: #444;
     margin-bottom: 10px;
 }
 
@@ -112,18 +138,15 @@ ul {
 
 ul li {
     font-size: 1em;
-    background-color: #f0f8ff; /* Color de fondo suave */
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease;
+    color: whitesmoke;
 }
 
-ul li:hover {
-    background-color: #e0f7fa; /* Color de fondo al pasar el mouse */
-    cursor: pointer;
-}
+
 
 /* Estilos para los porcentajes */
 ul#porcentajeGenero li,
@@ -148,3 +171,73 @@ ul#porcentajeDisciplina li {
     font-size: 1.2em;
     color: #007bff;
 }
+
+/* Estilos generales del formulario */
+#formAgregarSocio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los inputs y selects */
+#formAgregarSocio input,
+#formAgregarSocio select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+/* Hover y focus en inputs y selects */
+#formAgregarSocio input:focus,
+#formAgregarSocio select:focus {
+    border-color: #13286d;
+    outline: none;
+    box-shadow: 0 0 5px #007bff;
+}
+
+/* Estilos para el botón */
+#formAgregarSocio button {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #13286d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#formAgregarSocio button:hover {
+    background-color: #007bff;
+}
+
+/* Resaltar los placeholders */
+#formAgregarSocio input::placeholder {
+    color: #888;
+    font-style: italic;
+}
+
+/* Responsive: Ajustar para pantallas más pequeñas */
+@media (max-width: 600px) {
+    #formAgregarSocio {
+        padding: 15px;
+        gap: 10px;
+    }
+
+    #formAgregarSocio button {
+        font-size: 16px;
+    }
+}
+
